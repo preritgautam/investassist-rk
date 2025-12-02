@@ -1,0 +1,31 @@
+{
+  "name": "invest-assist",
+  "version": "1.0.0",
+  "description": "A bootstrap project with ui and api modules",
+  "main": "none",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.3.8"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/auto_uw/invest-assist.git"
+  },
+  "keywords": [
+    "clik",
+    "bootstrap"
+  ],
+  "author": "chetan@clik.ai",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/auto_uw/invest-assist#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

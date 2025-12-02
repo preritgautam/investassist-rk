@@ -1,0 +1,108 @@
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.rr-column-header {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(225, 225, 225, 1) 100%);
+}
+
+.os-column-header {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(225, 225, 225, 1) 100%);
+}
+
+.ag-header-group-cell {
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(225, 225, 225, 1) 100%);
+}
+
+div.ag-filter-body input.ag-input-field-input {
+    padding: 3px 4px !important;
+    border-radius: 5px !important;
+    margin-top: 4px !important;
+}
+
+button.ag-filter-apply-panel-button {
+    border: 1px solid #aaa !important;
+    padding: 0 8px 0 8px;
+    background: #eee;
+}
+
+div.ag-filter-apply-panel > button:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+div.ag-filter-apply-panel {
+
+}
+
+tr.document-row .document-action-button {
+    color: #BFC0CA;
+}
+
+tr.document-row:hover .document-action-button {
+    color: #000000;
+}
+
+tr.document-row:hover .document-action-button.danger {
+    color: #ED1212;
+}
+
+tr.document-row:hover .document-action-button.warning {
+    color: #CE7A2CFF;
+}
+
+tr.document-row:hover .document-action-button.primary {
+    color: #155E97;
+}
+
+.datepicker {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.datepicker > input[type=date] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.datepicker > input[type=date]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    cursor: pointer;
+}
+
+.centerHeader .ag-header-group-cell-label {
+    display: inline-grid;
+    text-align: center;
+}
+
+.rr-unit-summary .ag-floating-bottom, .rr-rent-summary .ag-floating-bottom {
+    height: 43px !important;
+    min-height: 43px !important;
+}
+
+.ag-row-hover.cf-summary-row.cf-summary-header-row.ag-row::before {
+    background: #145d97;
+}
+
+.ag-status-bar {
+
+}
+
+.ag-status-name-value {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

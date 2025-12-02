@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            INA - Subscription Payment Success - {{ accountName }}
+        </title>
+    </head>
+    <body>
+        <p>
+            Admin,<br/>
+            A subscription payment was completed on InvestAssist [{{ appUniqueSlug }}].<br/>
+            Following are the account details:
+        </p>
+        <p>
+            App Unique Slug - {{ appUniqueSlug }}<br/>
+            Account Name - {{ accountName }}<br/>
+            Stripe Customer Id - {{ stripeCustomerId }}<br/>
+            Stripe Subscription Id - {{ stripeSubscriptionId }}<br/>
+            Stripe Plan Id - {{ stripePlanId }}<br/>
+            Plan Id - {{ planId }}<br/>
+            Status - {{ status }}<br/>
+            Current Subscription Started On - {{ currentSubscriptionStartedOn }}<br/>
+            Current Subscription Ends On - {{ currentSubscriptionEndsOn }}<br/>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            INA - Subscription Cancelled - {{ accountName }}
+        </title>
+    </head>
+    <body>
+        <p>
+            Admin,<br/>
+            A subscription was cancelled on InvestAssist [{{ appUniqueSlug }}].<br/>
+            Following are the account details:
+        </p>
+        <p>
+            App Unique Slug - {{ appUniqueSlug }}<br/>
+            Account Name - {{ accountName }}<br/>
+            Stripe Customer Id - {{ stripeCustomerId }}<br/>
+            Stripe Subscription Id - {{ stripeSubscriptionId }}<br/>
+            Stripe PlanId - {{ stripePlanId }}<br/>
+            Plan Id - {{ planId }}<br/>
+            Status - {{ status }}<br/>
+            Trial Started On - {{ trialStartedOn }}<br/>
+            trial Ended On - {{ trialEndedOn }}<br/>
+            Current Subscription Started On - {{ currentSubscriptionStartedOn }}<br/>
+            Current Subscription Ends On - {{ currentSubscriptionEndsOn }}<br/>
+            Marked For Cancellation On - {{ markedForCancellationOn }}<br/>
+        </p>
+    </body>
+</html>

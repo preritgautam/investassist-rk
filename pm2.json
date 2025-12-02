@@ -1,0 +1,46 @@
+{
+  "apps": [
+    {
+      "name": "api",
+      "script": "build/app/app.js",
+      "watch": false,
+      "instances": 1,
+      "exec_mode": "cluster",
+      "cwd": "/home/ubuntu/projects/invest-assist/api",
+      "max_memory_restart": "1G",
+      "source_map_support": false,
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 4800
+      }
+    },
+    {
+      "name": "jobs",
+      "script": "npm",
+      "args": "run jobs:prod",
+      "watch": false,
+      "instances": 1,
+      "exec_mode": "cluster",
+      "cwd": "/home/ubuntu/projects/invest-assist/api",
+      "max_memory_restart": "1G",
+      "source_map_support": false,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "ui",
+      "script": "npm",
+      "args": "start -- -p 4801",
+      "watch": false,
+      "instances": 1,
+      "exec_mode": "cluster",
+      "cwd": "/home/ubuntu/projects/invest-assist/ui",
+      "max_memory_restart": "1G",
+      "source_map_support": false,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Ui/.idea/
+api/.idea/
+.idea/
+node_modules/
+.env.local
